@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <com.lxm.txtapp.PageWidget
+        android:id="@+id/PageWidget"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    
+        <TextView
+            android:id="@+id/timeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" >
+        </TextView>
+    </com.lxm.txtapp.PageWidget>
+
+</LinearLayout>

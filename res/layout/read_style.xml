@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:id="@+id/black_txt"
+        android:layout_weight="1"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFAAAAAA"
+            android:scrollbars="none"
+            android:scrollingCache="false" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:id="@+id/color1"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="0" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#ffffffff" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Default"
+                        android:textColor="#ff000000" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/color2"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="1" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#ffcae6cd" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Eye"
+                        android:textColor="#ff677269" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/color3"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="2" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF151C1F" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 1"
+                        android:textColor="#FF4D5052" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/color4"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="3" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF000000" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 2"
+                        android:textColor="#FF373737" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/color5"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="4" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF000000" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 3"
+                        android:textColor="#FF5F5F5F" />
+                </RelativeLayout>
+                                <RelativeLayout
+                    android:id="@+id/color6"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="5" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF000000" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 4"
+                        android:textColor="#FF333333" />
+                </RelativeLayout>
+                                <RelativeLayout
+                    android:id="@+id/color7"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="6" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF000000" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 5"
+                        android:textColor="#FF494949" />
+                </RelativeLayout>
+                                <RelativeLayout
+                    android:id="@+id/color8"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="7" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF000000" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 6"
+                        android:textColor="#FF222222" />
+                </RelativeLayout>
+                                <RelativeLayout
+                    android:id="@+id/color9"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="8" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF001622" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 7"
+                        android:textColor="#FF204353" />
+                </RelativeLayout>
+                                <RelativeLayout
+                    android:id="@+id/color10"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="9" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF171F27" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 8"
+                        android:textColor="#FF445053" />
+                </RelativeLayout>
+                                <RelativeLayout
+                    android:id="@+id/color11"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="10" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#FF251C05" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 9"
+                        android:textColor="#FF574F3C" />
+                </RelativeLayout>
+                                                <RelativeLayout
+                    android:id="@+id/color12"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="11" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@raw/bg1" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 10"
+                        android:textColor="#FF95938F" />
+                </RelativeLayout>
+                                                                <RelativeLayout
+                    android:id="@+id/color13"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="12" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@raw/bg2" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 11"
+                        android:textColor="#FF3A342B" />
+                </RelativeLayout>
+                                                                                <RelativeLayout
+                    android:id="@+id/color14"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="13" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@raw/bg3" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 12"
+                        android:textColor="#FF637079" />
+                </RelativeLayout>
+                
+                                                                                                                                                                <RelativeLayout
+                    android:id="@+id/color15"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:tag="14" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@raw/bg5" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/color1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="Mode 13"
+                        android:textColor="#FF3A342B" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

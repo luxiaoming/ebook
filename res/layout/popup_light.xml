@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:id="@+id/black_txt"
+        android:layout_weight="1"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/pop_buttom_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left|center_vertical"
+                android:text="@string/backlight_title" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/background_light"
+            android:contentDescription="@string/backlight_title" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_adjust_bright_small" />
+
+            <SeekBar
+                android:id="@+id/read_bright_adjust_group_id"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:max="90"
+                
+                 />
+            <!--
+                 <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="0dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:thumbOffset="3dip"
+                android:progressDrawable="@drawable/seekbar_img"
+                android:progress="20"
+                
+                android:thumb="@drawable/thumb"
+                android:gravity="center" />				-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_adjust_bright_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/system" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/MyCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_buttom_bg"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/app_shujia"
+        android:textSize="24dip" />
+
+    <GridView
+        android:id="@+id/popup_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pop_buttom_bg"
+        android:gravity="center"
+        android:listSelector="@drawable/pop_pressed"
+        android:numColumns="3" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/AdLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" />
+
+</RelativeLayout>

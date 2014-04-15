@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mymarkback"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/markImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="5dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/reader_bookmarks" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/markText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text=""
+            android:ellipsize="end"
+            android:textColor="#000000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/markText2"
+            android:layout_below="@+id/markText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            
+            android:text="" >
+        </TextView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/markImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/reader_delete_bookmark" >
+    </ImageView>
+
+</LinearLayout>
